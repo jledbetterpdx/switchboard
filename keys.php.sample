@@ -1,0 +1,14 @@
+<?php
+
+define('API_KEY_OPENWEATHER', '0123456789abcdeffedcba9876543210');
+define('API_KEY_WUNDERGROUND', '0123456789abcdef');
+define('API_KEY_WUNDERGROUND_STATION', 'KORTIGAR22');   /* Wunderground station ID */
+define('API_KEY_NEST_OAUTH_CLIENTID', '01234567-89ab-cdef-fedc-ba9876543210');
+define('API_KEY_NEST_OAUTH_CLIENTSECRET', '0123456789abcdefghijklmno');
+define('API_KEY_NEST_OAUTH_AUTHURL', 'https://home.nest.com/login/oauth2?client_id=' . API_KEY_NEST_OAUTH_CLIENTID . '&state=STATE');
+define('API_KEY_NEST_OAUTH_TOKENURL', 'https://api.home.nest.com/oauth2/access_token?client_id=' . API_KEY_NEST_OAUTH_CLIENTID . '&code=AUTHORIZATION_CODE&client_secret=' . API_KEY_NEST_OAUTH_CLIENTSECRET . '&grant_type=authorization_code');
+define('API_KEY_NEST_USERNAME', 'youraddress@example.com');
+define('API_KEY_NEST_PASSWORD', 'hunter2');
+define('API_KEY_HAMWEATHER_OAUTH_CLIENTID', '0123456789abcdefghijk');
+define('API_KEY_HAMWEATHER_OAUTH_CLIENTSECRET', 'abcdefgHIJKLMNOPqrsTUVwxYANDZnowIknowMYabcs');
+define('API_KEY_HAMWEATHER_OAUTH_DOMAIN', 'example.com');
