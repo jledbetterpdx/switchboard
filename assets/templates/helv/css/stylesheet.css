@@ -1,0 +1,447 @@
+html, html *
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body
+{
+    background: #000;
+    color: #fff;
+    font-family: 'HelveticaNeueLT', 'Roboto', sans-serif;
+    max-height: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+footer
+{
+    bottom: 0;
+    text-align: center;
+    font-size: 0.75em;
+    font-variant: small-caps;
+    letter-spacing: 3px;
+    position: absolute;
+    width: 100%;
+}
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after
+{
+    content: " ";
+    display: table;
+}
+
+.clearfix:after
+{
+    clear: both;
+}
+
+.clearfix
+{
+    *zoom: 1;
+}
+
+.dimmed
+{
+    opacity: 0.15;
+}
+
+.night
+{
+    opacity: 0.35;
+}
+
+/* Item positioning */
+#panel-weather
+{
+    position: absolute;
+    width: 70vw;
+    height: 60vh;
+    left: 0;
+    top: 0;
+    padding: 2vh 2vw;
+    margin: 0;
+}
+
+#panel-weather-current
+{
+    position: absolute;
+    width: 70vw;
+    height: 36vh;
+    left: 0;
+    top: 0;
+}
+
+#panel-weather-current-conditions
+{
+    width: 70vw;
+    height: 22vh;
+    font-size: 22vh;
+    line-height: 22vh;
+    position: absolute;
+    left: 2vw;
+    top: 2vh;
+    text-align: left;
+}
+
+#panel-weather-current-conditions-icon
+{
+    line-height: 22vh;
+    font-size: 14vh;
+    height: 22vh;
+    width: 22vh;
+    text-align: center;
+    top: -4vh;
+    position: relative;
+}
+
+.panel-weather-current-auxinfo
+{
+    position: absolute;
+    right: 0;
+    width: 30vw;
+    height: 5vh;
+    font-size: 4vh;
+    line-height: 5vh;
+    text-align: left;
+}
+
+.panel-weather-current-auxinfo.half-panel
+{
+    width: 15vw;
+}
+
+.panel-weather-current-auxinfo.half-panel.left-panel
+{
+    right: 15vw;
+}
+
+.panel-weather-current-auxinfo i.wi
+{
+    display: inline-block;
+    width: 4vw;
+    text-align: center;
+}
+
+#panel-weather-current-wind,
+#panel-weather-current-gust
+{
+    top: 3vh;
+}
+
+#panel-weather-current-precip
+{
+    top: 8vh;
+}
+
+#panel-weather-current-humidity
+{
+    top: 13vh;
+}
+
+#panel-weather-current-pressure
+{
+    top: 18vh;
+}
+
+#panel-weather-current-pressure-trend
+{
+    text-align: left;
+}
+
+#panel-weather-current-span
+{
+    font-size: 6vh;
+    position: absolute;
+    top: 26vh;
+    left: 2vw;
+    width: 30vw;
+    height: 4.2vw;
+    line-height: 4.2vw;
+    text-align: left;
+    margin: 0.5vh 0.5vw;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+#panel-datetime
+{
+    position: absolute;
+    width: 80vw;
+    height: 25vh;
+    left: 0;
+    top: 60vh;
+    padding: 0.5vw;
+    margin: 0 1vw;
+}
+
+#panel-datetime-date
+{
+    position: absolute;
+    left: 0;
+    width: 26vw;
+    height: 25vh;
+}
+
+#panel-datetime-date-month
+{
+    position: absolute;
+    left: 0;
+    top: 4vh;
+    width: 100%;
+    height: 5vh;
+    line-height: 5vh;
+    padding: 0 1vw;
+    font-size: 5vh;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#panel-datetime-date-dow
+{
+    position: absolute;
+    right: 0;
+    bottom: 3vh;
+    height: 8.5vh;
+    line-height: 7vh;
+    padding: 0.5vh 1vw 1vh;
+    font-size: 7vh;
+    text-align: right;
+    background-color: #fff;
+    color: #000;
+    border-radius: 1vw;
+    display: inline-block;
+    font-weight: bold;
+}
+
+#panel-datetime-date-day
+{
+    position: absolute;
+    left: 0;
+    bottom: 2vh;
+    width: 65%;
+    height: 15vh;
+    line-height: 15vh;
+    font-size: 15vh;
+    text-align: left;
+    padding: 0 1vw;
+}
+
+#panel-datetime-time
+{
+    position: absolute;
+    top: 0;
+    left: 28vw;
+    width: 44vw;
+    height: 25vh;
+    line-height: 25vh;
+    font-size: 25vh;
+    text-align: center;
+    padding: 0 1vw;
+}
+
+#panel-datetime-moon
+{
+    color: #fff;
+}
+
+#panel-datetime-moon-shadow
+{
+    color: #555;
+}
+
+.panel-datetime-moon-phase
+{
+    position: absolute;
+    right: 0;
+    top: 3.5vh;
+    line-height: 8vh;
+    font-size: 8vh;
+    text-align: center;
+    width: 8vh;
+}
+
+#panel-astronomy
+{
+    position: absolute;
+    right: 0;
+    top: 60vh;
+    width: 25vw;
+    height: 25vh;
+    padding: 0 2vw;
+}
+
+#panel-astronomy-sunrise
+{
+    top: 2vh;
+}
+
+#panel-astronomy-sunset
+{
+    top: 13vh;
+}
+
+.panel-astronomy-sun
+{
+    position: absolute;
+    text-align: right;
+    height: 10vh;
+    line-height: 8vh;
+    font-size: 8vh;
+    width: 100%;
+    left: 0;
+    padding: 1vh 2vw;
+}
+
+#panel-news
+{
+    position: absolute;
+    bottom: 4vh;
+    left: 0;
+    font-size: 6vh;
+    line-height: 9vh;
+    width: 100vw;
+    height: 9vh;
+    background-color: #333;
+    overflow: hidden;
+}
+
+#panel-news-crawl
+{
+    position: relative;
+    height: 100%;
+    top: 0;
+    left: 100vw;
+    margin: 0 0.5vw;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+i.panel-news-separator
+{
+    padding: 0 2vw;
+}
+
+.panel-error
+{
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 2vmin;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
+    display: none;
+}
+
+#panel-astronomy-error
+{
+    width: 20vmin;
+    height: 20vmin;
+}
+
+#panel-weather-error
+{
+    width: 40vmin;
+    height: 40vmin;
+}
+
+.panel-error-icon
+{
+    -webkit-animation: flickerAnimation 3s infinite;
+    -moz-animation: flickerAnimation 3s infinite;
+    -o-animation: flickerAnimation 3s infinite;
+    animation: flickerAnimation 3s infinite;
+    text-align: center;
+    color: #f00;
+}
+
+#panel-astronomy-error .panel-error-icon
+{
+    height: 16vmin;
+}
+
+#panel-astronomy-error .panel-error-icon i
+{
+    line-height: 16vmin;
+    font-size: 12vmin;
+}
+
+.panel-error-text
+{
+    -webkit-animation: flickerAnimation 3s infinite;
+    -moz-animation: flickerAnimation 3s infinite;
+    -o-animation: flickerAnimation 3s infinite;
+    animation: flickerAnimation 3s infinite;
+    text-transform: uppercase;
+    text-align: center;
+    color: #f00;
+}
+
+#panel-astronomy-error .panel-error-text
+{
+    margin: -1vmin;
+    font-size: 3vmin;
+    line-height: 4vmin;
+    letter-spacing: 0.4vmin;
+}
+
+#panel-weather-error .panel-error-icon
+{
+    height: 32vmin;
+}
+
+#panel-weather-error .panel-error-icon i
+{
+    line-height: 32vmin;
+    font-size: 24vmin;
+}
+
+#panel-weather-error .panel-error-text
+{
+    margin-top: -2vmin;
+    font-size: 6vmin;
+    line-height: 8vmin;
+    letter-spacing: 0.8vmin;
+}
+
+@keyframes flickerAnimation
+{
+    0%   { opacity:1; }
+    50%  { opacity:1; }
+    50.1%  { opacity:0; }
+    100% { opacity:0; }
+}
+
+@-o-keyframes flickerAnimation
+{
+    0%   { opacity:1; }
+    50%  { opacity:1; }
+    50.1%  { opacity:0; }
+    100% { opacity:0; }
+}
+
+@-moz-keyframes flickerAnimation
+{
+    0%   { opacity:1; }
+    50%  { opacity:1; }
+    50.1%  { opacity:0; }
+    100% { opacity:0; }
+}
+@-webkit-keyframes flickerAnimation
+{
+    0%   { opacity:1; }
+    50%  { opacity:1; }
+    50.1%  { opacity:0; }
+    100% { opacity:0; }
+}
+
+.animate-flicker
+{
+}

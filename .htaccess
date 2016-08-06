@@ -1,0 +1,21 @@
+# Rewrite rules
+RewriteEngine On
+
+# Make index.php the directory index page
+DirectoryIndex index.php
+
+# Block directory listings
+Options -Indexes
+
+## INTERNAL LINKS - NARROW URL FOCUS ##
+# Removes access to the system and application folders by users
+RewriteRule ^((system|application).*)$ /index.php?/$1 [L]
+
+## INTERNAL LINKS - BROAD URL FOCUS ##
+# Checks to see if the user is attempting to access a valid file,
+# such as an image or css document, if this isn't true it sends the
+# request to index.php
+RewriteRule $1 !(^index\.php|\.(gif|jpe?g|png|ico|css|js))$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?/$1 [L]
