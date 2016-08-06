@@ -15,12 +15,13 @@ This is the source code for the Switchboard Home Automation System, a smart home
 * Moon phase -- currently taken from the [Aeris weather API](http://www.aerisweather.com/develop/)
 * Above served using AJAX
 * Updates at a randomly chosen interval between 4 and 6 minutes, to not flood APIs with requests at regular intervals and ensure relatively up-to-date data
-* Auto-recovery if an error happens when calling for data
+* Auto-recovery if an error happens when calling for data + offline indicator
 * Auto-dimming at night based on civil dawn/dusk
 
 ## Short Term To-Do
 * Switch to official Nest API
   * May fix disappearing target temp time bug
+* The 3 R's -- **R**efactor, **R**efactor, **R**efactor
 * Make responsive -- less fixed design, more mobile support
 * Add upcoming TV episode schedule to ticker
 * Add daily forecast alongside 3-hour forecast
